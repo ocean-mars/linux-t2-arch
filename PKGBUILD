@@ -5,12 +5,13 @@
 #               apple-ibridge drivers, respectively.
 
 pkgbase="linux-t2"
-pkgver=6.10.9
-_srcname=linux-${pkgver}
+_pkgver=6.11
+pkgver=${_pkgver}.0
+_srcname=linux-${_pkgver}
 pkgrel=1
 archrel=1
 pkgdesc='Linux kernel for T2 Macs'
-_srctag=v${pkgver%.*}-${pkgver##*.}
+_srctag=v${_pkgver%.*}-${_pkgver##*.}
 url="https://github.com/archlinux/linux/commits/$_srctag"
 arch=(x86_64)
 license=(GPL2)
@@ -35,10 +36,10 @@ makedepends=(
 conflicts=('apple-gmux-t2-dkms-git')
 replaces=('apple-gmux-t2-dkms-git')
 options=('!strip')
-_srcname="linux-${pkgver}-arch${archrel}"
+_srcname="linux-${_pkgver}-arch${archrel}"
 T2_PATCH_HASH=c0db79a25bc37dbd0c27636914b3903016a2fc39
 source=(
-  https://github.com/archlinux/linux/archive/refs/tags/v${pkgver}-arch${archrel}.tar.gz
+  https://github.com/archlinux/linux/archive/refs/tags/v${_pkgver}-arch${archrel}.tar.gz
   config  # the main kernel config file
 
   # t2linux Patches
@@ -250,7 +251,7 @@ for _p in "${pkgname[@]}"; do
   }"
 done
 
-sha256sums=('57fb43d83491188b4356f9c04a37ad4f316eb0b8595429bd0754335aae3e84fa'
+sha256sums=('364bb32cadd41401f686dd58c58a08432f927aabdb35e2482ba62a4a559bd24d'
             '6b337a9d3cfdc00005589a80b8d36fa500f6a92ed21565a3aceec48d7202a7da'
             'SKIP')
 # vim:set ts=8 sts=2 sw=2 et:
