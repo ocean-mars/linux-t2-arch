@@ -12,9 +12,9 @@ jobs:
         sudo rm -rf /usr/share/dotnet
         sudo rm -rf /usr/local/lib/android
         sudo rm -rf /opt/ghc
-        BUILDUSER=sakuraadachi
-        BUILDGROUP=adashima
-        HOSTNAME=Adachi-and-Shimamura
+        BUILDUSER=renakoamaori
+        BUILDGROUP=quintet
+        HOSTNAME=There-s-No-Freaking-Way-I-ll-Be-Your-Lover-Unless
         cat << EOF > entrypoint.sh
         cd /build
         groupadd -r $BUILDGROUP
