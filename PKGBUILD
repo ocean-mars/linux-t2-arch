@@ -1,6 +1,6 @@
 # Maintainer: Ocean_Mars
 # Previous Maintainer: Redecorating, Noa Himesaka
-# Contributors: There are many, see `grep -h "From:" *.patch|sort|uniq -c`.
+# Contributors: There are many, see 'grep -h "From:" *.patch|sort|uniq -c'.
 #               Additionally, MrARM and Ronald Tschalär wrote apple-bce and
 #               apple-ibridge drivers, respectively.
 
