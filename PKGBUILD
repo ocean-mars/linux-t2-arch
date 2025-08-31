@@ -5,8 +5,8 @@
 #               apple-ibridge drivers, respectively.
 
 pkgbase="linux-t2"
-_pkgver=6.16.1
-pkgver=${_pkgver}
+_pkgver=6.16.4
+pkgver=6.16.4
 _srcname=linux-${_pkgver}
 pkgrel=1
 archrel=1
@@ -37,7 +37,7 @@ conflicts=('apple-gmux-t2-dkms-git')
 replaces=('apple-gmux-t2-dkms-git')
 options=('!strip')
 _srcname="linux-${_pkgver}-arch${archrel}"
-T2_PATCH_HASH=c0db79a25bc37dbd0c27636914b3903016a2fc39
+T2_PATCH_HASH=6b41c3fd65913e0fa3592ad16ff4a3a5b01efc7a
 source=(
   https://github.com/archlinux/linux/archive/refs/tags/v${_pkgver}-arch${archrel}.tar.gz
   config  # the main kernel config file
@@ -250,7 +250,7 @@ for _p in "${pkgname[@]}"; do
   }"
 done
 
-sha256sums=('e2865c606c4321a26ab39f33182bec1539a3e635021d7a72d50a6280e6f49a44'
-            'c6c12ee73e386142074ce76cc5409552815a7d9812a1d4bbd2d686fc9e785539'
+sha256sums=('4dfeea9d50343af482ece0a66d8dbd21ce1b5ecdd988633d309f5f81b37e6d8b'
+            '33e7e35af5a1a9d937aa54865c79cd2fc0f2834e9db9f7ba171e3bb93f19e552'
             'SKIP')
 # vim:set ts=8 sts=2 sw=2 et:
