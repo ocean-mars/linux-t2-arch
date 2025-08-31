@@ -46,10 +46,10 @@ jobs:
           commit-message: ${{ env.pkgbase }} v${{ env.pkgver }}-${{ env.pkgrel }}
           branch: auto-update/v${{ env.pkgver }}-${{ env.pkgrel }}
           delete-branch: true
-          title: v${{env.pkgver}}-${{env.pkgrel}} Automatic update
+          title: v${{env.pkgver}}-${{env.pkgrel}}
       - name: Build
         if: ${{env.publish == 'yes'}}
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh workflow run BuildKernelPackage.yml --ref auto-update/v${{env.pkgver}}-${{env.pkgrel}}
+          gh workflow run KernelReleaseBuilds.yml --ref update/v${{env.pkgver}}-${{env.pkgrel}}
