@@ -1,5 +1,5 @@
-# Maintainer: Noa Himesaka
-# Previous Maintainer: Redecorating
+# Maintainer: Ocean Mars
+# Previous Maintainer: Noa Himesaka, Redecorating
 # Contributors: There are many, see `grep -h "From:" *.patch|sort|uniq -c`.
 #               Additionally, MrARM and Ronald Tschalär wrote apple-bce and
 #               apple-ibridge drivers, respectively.
@@ -63,7 +63,6 @@ prepare() {
   cd $_srcname
 
   echo "Setting version..."
-  echo "-Watanare-T2" > localversion.10-codename
   echo "-$pkgrel" > localversion.20-pkgrel
   echo "${pkgbase#linux}" > localversion.30-pkgname
   make defconfig
