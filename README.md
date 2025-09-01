@@ -1,5 +1,5 @@
 ## `Arch Linux Kernel for T2 Macs`
-[![Kernel Release Builds](https://github.com/ocean-mars/linux-t2-arch/actions/workflows/KernelReleaseBuilds.yml/badge.svg?branch=main)](https://github.com/ocean-mars/linux-t2-arch/actions/workflows/KernelReleaseBuilds.yml) 
+[![Kernel Builds](https://github.com/ocean-mars/linux-t2-arch/actions/workflows/KernelBuilds.yml/badge.svg)](https://github.com/ocean-mars/linux-t2-arch/actions/workflows/KernelBuilds.yml) 
 
 Arch Linux package for Linux kernel with bleeding edge T2 Mac support.
 
