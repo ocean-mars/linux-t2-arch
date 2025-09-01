@@ -1,4 +1,4 @@
-name: Kernel Release Builds
+name: Kernel Builds
 on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
